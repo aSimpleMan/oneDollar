@@ -3,5 +3,5 @@
 操作系统: Centos7.9
 主   IP: 27.124.53.116
 系统账号: root
-系统密码: 6SfLgP8dL9wS7v4n
+系统密码: fY3wJAUvoI2Wf0v3
 远程端口: 22
