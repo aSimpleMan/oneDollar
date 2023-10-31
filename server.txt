@@ -5,3 +5,20 @@
 系统账号: root
 系统密码: fY3wJAUvoI2Wf0v3
 远程端口: 22
+
+alter user user() identified by "Root12345.";
+
+ location / {
+      
+          root   /www/onedollor;
+      // 站点初始页为index.html 或 index.htm
+          index  index.html index.htm;
+        }
+        location / {
+           try_files $uri $uri/ @rewrites;
+           index index.html;
+        }
+        location @rewrites {
+           rewrite ^.*$ /index.html last;
+        }
+/usr/local/redis/redis-server /usr/local/redis/redis.conf
